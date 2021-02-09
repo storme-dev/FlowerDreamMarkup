@@ -1,0 +1,459 @@
+body {
+    font-family: 'Helvetica Neue Cyr Medium';
+}
+
+/* Common styles */
+.pink {
+    background: #BCB0C4;
+}
+
+.green-blue {
+    background: #2F5A6B;
+}
+
+.m-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.x-title {
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-weight: bold;
+    font-size: 42px;
+    color: #2D2D2D;
+}
+
+.title {
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-size: 24px;
+    line-height: 24px;
+    color: #2D2D2D;
+}
+
+.subtitle {
+    font-family: 'Helvetica Neue Cyr Bold';
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D2D2D;
+}
+
+.navbar {
+    padding: 18px 84px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__text {
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.navbar__menu {
+    margin-left: 50px;
+}
+
+/* Element:button */
+.footer-button {
+    padding: 10px 27px;
+    color: #777777;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;  
+    background: #fff;
+}
+
+.icon-button {
+    padding: 12px 23px;
+    color: #fff;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.icon-button.pink:hover {
+    background: #9b8fa3;
+    transition: 0.15s;
+}
+
+.icon-button.green-blue:hover {
+    background: #274a58;
+    transition: 0.15s;
+}
+
+.button-outline {
+    padding: 12px 23px;
+    color: #2F5A6B;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;  
+    border: 1.5px solid #2F5A6B;
+}
+
+.button-outline:hover {
+    background: #274a58;
+    border: 1.5px solid #274a58;
+    color: #fff;
+}
+
+.icon-button img {
+    margin-left: 16px;
+}
+
+/* Element:download-block */
+.download-block {
+    border: 1px dashed #DEDEDE;
+    padding: 38px 52px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Element: checkbox */
+.checkbox {
+    width: 18px;
+    height: 18px;
+    background: url(../images/icons/check.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 1.5px solid #DEDEDE;
+}
+
+/* Element:link */
+.link {
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #2F5A6B;
+}
+
+/* Element:inline-menu */
+
+.inline-menu {
+    display: flex;
+    align-items: center;
+}
+
+.inline-menu__item {
+    color: #2D2D2D;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.inline-menu__item_active {
+    color: #BCB0C4;
+}
+
+/* Footer */
+.footer {
+    background: #999999;
+    padding: 74px 125px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: 90px;
+}
+
+.footer__right-bottom {
+    margin-left: 80px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Helvetica Neue Cyr Light';
+    color: #E5E5E5;
+}
+
+.footer__menu-item {
+    margin-left: 32px;
+}
+
+/* Element:material-field */
+.material-field {
+    position: relative;
+    background: transparent;
+}
+
+.material-field input {
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+}
+
+.material-field input::-webkit-input-placeholder {
+    font-family: 'Helvetica Neue Cyr Light';
+    color: #E5E5E5;
+}
+
+.material-field input:focus {
+    outline: none;
+}
+
+.material-field label {
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.material-field input:focus ~ label, input:valid ~ label {
+    top: -15px;
+    font-size: 14px;
+    color: #2F5A6B;
+}
+
+.material-field__bar {
+    position: relative;
+    display: block;
+    width: 270px;
+}
+.material-field__bar:before, .material-field__bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #2F5A6B;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.material-field__bar:before {
+    left: 50%;
+}
+.material-field__bar:after {
+    right: 50%;
+}
+
+/* active state */
+.material-field input:focus ~ .material-field__bar:before,
+.material-field input:focus ~ .material-field__bar:after {
+    width: 50%;
+}
+
+/* Element:text-area */
+.text-area textarea {
+    border: none;
+    border: 1px solid #DEDEDE;
+    outline: none;
+    padding: 11px 15px;
+    color: #2D2D2D;
+    transition: 0.15s;
+    width: 100%;
+}
+
+/* Element:field */
+.field input {
+    border: none;
+    border: 1px solid #DEDEDE;
+    outline: none;
+    padding: 11px 15px;
+    color: #2D2D2D;
+    transition: 0.15s;
+    width: 100%;
+}
+
+.field .label {
+    color: #777777;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
+.field input:focus {
+    border: 1px solid #274a58;
+    outline: none;
+    transition: 0.15s;
+}
+
+.inline-fields {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Element:alert */
+.alert {
+    padding-left: 15px;
+    color: #777777;
+    font-size: 14px;
+    line-height: 14px;
+    border-left: 2px #2F5A6B solid;
+}
+
+/* Page */
+.page {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-top: 40px;
+}
+
+.page__header {
+    display: flex;
+    align-items: baseline;
+}
+
+.page__icon {
+    cursor: pointer;
+}
+
+.page__content {
+    margin-top: 20px;
+    border: 1px solid #DEDEDE;
+    padding: 40px;
+}
+
+/* Element:select */
+
+.select {
+    background: #fff;
+}
+
+.select__content {
+    transition: 1s;
+    background: #fff;
+    position: absolute; 
+    z-index: 1000;
+    width: inherit;
+}
+
+.select__input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border: 1px solid #DEDEDE;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.select.no-icon .select__input {
+    justify-content: center;
+}
+
+.select__input:hover {
+    background: #f1f1f1;
+    transition: 0.15s;
+}
+
+.select__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select__text {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.select-menu__item {
+    padding: 10px 12px;
+    border-bottom: 1px solid #DEDEDE;
+    border-right: 1px solid #DEDEDE;
+    border-left: 1px solid #DEDEDE;
+    cursor: pointer;
+}
+
+.select-menu__item:hover {
+    background: #f1f1f1;
+    transition: 0.15s;
+}
+
+.label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #777777;
+}
+
+.payments {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.payments img {
+    margin-right: 20px;
+}
+
+.lists {
+    display: flex;
+    align-items: flex-start;
+}
+
+.list {
+    color: #fff;
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 18px;
+    line-height: 18px;
+    margin-left: 80px;
+}
+
+.list__item {
+    margin-bottom: 20px;
+}
+

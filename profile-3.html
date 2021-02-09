@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <!-- UIkit -->
+    <link rel="stylesheet" href="./css/uikit.css">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+    <script src="./js/uikit.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./fonts/Helvetica.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar__left">
+            <div class="navbar__logo"><img src="./images/icons/cart_circle.svg" alt=""></div>
+            <div class="inline-menu navbar__menu">
+                <div class="inline-menu__item inline-menu__item_active">Товары</div>
+                <div class="inline-menu__item">Сообщения</div>
+                <div class="inline-menu__item">Архив</div>
+                <div class="inline-menu__item">Отзывы</div>
+                <div class="inline-menu__item">Финансы</div>
+            </div>
+        </div>
+        <div class="navbar__right">
+            <div class="navbar__text">
+                Помощь
+            </div>
+            <div class="icon-button pink">
+                В каталог
+                <img src="./images/icons/catalog_icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="profile-title">
+        Профиль
+        <div class="link" style="margin-left: 25px;">Ваша страница</div>
+    </div>
+    <div class="profile-menu">
+        <div class="profile-menu__item profile-menu_active">Личный кабинет</div>
+        <div class="profile-menu__item">О магазине</div>
+        <div class="profile-menu__item">Условия доставки</div>
+        <div class="profile-menu__item">Реквизиты</div>
+    </div>
+    <div class="profile-page">
+        <label class="uk-form-label" for="form-stacked-text">Номер телефона</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="width: 450px;" id="form-stacked-text" type="text">
+        </div>
+        <div class="m-20"></div>
+        <label class="uk-form-label" for="form-stacked-text">Email</label>
+        <div class="uk-form-controls" style="margin-bottom: 30px;">
+            <input class="uk-input" style="width: 450px;" id="form-stacked-text" type="text">
+        </div>
+        <div class="icon-button green-blue" style="width: 160px;">Сохранить</div>
+
+        <div class="subtitle" style="margin-top: 60px;">Сменить пароль</div>
+        <div class="m-20"></div>
+        <label class="uk-form-label" for="form-stacked-text">Пароль</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" style="width: 450px;" id="form-stacked-text" type="text">
+        </div>
+        <div class="m-20"></div>
+        <label class="uk-form-label" for="form-stacked-text">Новый пароль</label>
+        <div class="uk-form-controls" style="margin-bottom: 30px;">
+            <input class="uk-input" style="width: 450px;" id="form-stacked-text" type="text">
+        </div>
+        <div class="m-20"></div>
+        <label class="uk-form-label" for="form-stacked-text">Повтор пароля</label>
+        <div class="uk-form-controls" style="margin-bottom: 30px;">
+            <input class="uk-input" style="width: 450px;" id="form-stacked-text" type="text">
+        </div>
+        <div class="icon-button green-blue" style="width: 160px;">Сохранить</div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" style="margin-top: 84px;">
+        <div class="footer__content">
+            <div class="footer__left">
+                <div class="subtitle" style="color: #E5E5E5;">ПОДПИШИСЬ НА НАШИ НОВОСТИ</div>
+                <div style="display: flex; align-items: center; margin-top: 12px;">
+                    <div class="material-field">      
+                        <input type="text" style="color: #E5E5E5;" placeholder="Ваш Email">
+                        <span class="material-field__bar"></span>
+                    </div>
+                    <div class="footer-button" style="margin-left: 20px;">
+                        Подписаться
+                    </div>
+                </div>
+                <span style="color: #E5E5E5; font-size: 14px; margin-top: 112px;">Способы оплаты:</span>
+                <div class="payments">
+                    <img src="./images/icons/visa_logo.svg" alt="">
+                    <img src="./images/icons/master_logo.svg" alt="">
+                    <img src="./images/icons/applepay_logo.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="lists">
+                    <div class="list">
+                        <div class="list__item">Букеты</div>
+                        <div class="list__item">Магазины</div>
+                        <div class="list__item">Создать магазин</div>
+                        <div class="list__item">Стать Pro</div>
+                    </div>
+                    <div class="list">
+                        <div class="list__item">О нас</div>
+                        <div class="list__item">Партнёры</div>
+                        <div class="list__item">Блог</div>
+                    </div>
+                    <div class="list">
+                        <div class="list__item">Оплата</div>
+                        <div class="list__item">Доставка</div>
+                        <div class="list__item">Правила</div>
+                        <div class="list__item">Поддержка</div>
+                    </div>
+                </div>
+                <div class="footer__right-bottom">
+                    <div>
+                        <span style="color: #E5E5E5; font-size: 14px; margin-top: 112px;">Следи за нами:</span>
+                        <div class="payments">
+                            <img src="./images/icons/insta_logo.svg" alt="">
+                            <img src="./images/icons/facebook_logo.svg" alt="">
+                            <img src="./images/icons/youtube_logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <span style="color: #E5E5E5; font-size: 14px; margin-right: 10px;">RU</span>
+                        <span style="color: #E5E5E5; font-size: 14px; margin-right: 10px;">USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span style="color: #E5E5E5; font-size: 14px;">FLOR PEOPLE. All rights reserved 2020</span>
+            <div class="footer__menu">
+                <div class="footer__menu-item">Privacy Policy</div>
+                <div class="footer__menu-item">Terms of conditions</div>
+                <div class="footer__menu-item">Use of cookies</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function select(elem, options) {
+    var input = $(elem).find('.select__input');
+    var content = $(elem).find('.select__content');
+    var img = $(elem).find('.select__right img');
+    content.css('display', 'none');
+
+    $(input).click(function() {
+
+        if(content.css('display') != 'none') {
+            content.hide('slow');
+            img.css('transform', 'none');
+            return;
+        }
+        else {
+            img.css('transform', 'rotate(180deg)');
+            content.show('slow');
+            return;
+        }
+    });
+}
+
+$(document).ready(() => {
+
+    select($('#select-1'));
+});
+</script>

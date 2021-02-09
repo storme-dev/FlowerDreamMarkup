@@ -1,0 +1,42 @@
+.profile-title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    color: #2D2D2D;
+    margin-left: 160px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+}
+
+.price-block {
+    border: 1px solid #DEDEDE;
+    padding: 11px 16px;
+    margin-top: 5px;
+}
+
+.profile-page {
+    margin-left: 160px;
+    margin-right: 160px;
+    border: 1px solid #DEDEDE;
+    padding: 40px;
+}
+
+.profile-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 160px;
+    margin-bottom: 18px;
+}
+
+.profile-menu__item {
+    font-size: 14px;
+    line-height: 14px;
+    color: #2D2D2D;
+    margin-right: 25px;
+}
+
+.profile-menu_active {
+    color: #BCB0C4;
+}

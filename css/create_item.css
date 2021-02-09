@@ -1,0 +1,12 @@
+/* Photos */
+.photos {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.photos img {
+    width: 130px;
+    height: 150px;
+    margin-right: 20px;
+}
